@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background:linear-gradient(135deg, #0b00a1, #005b72, #004f99, #2e0196, #2e0196,#003688, #005368, #0b00a1);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+/*------El Cuadro---------*/
+.form {
+    width: 300px;
+    min-width: 300px;
+    border-radius: 18px;
+    border: solid 1px rgb(148, 251, 255);
+    margin: 200px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgb(3, 255, 179);
+}
+/*-----------------------*/
+
+.form img{
+    width: 120px;
+    display: block;
+    margin: 5px auto;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.5rem;
+    font: weight 600px;
+    color:beige;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form input {
+    display: block;
+    margin: auto;
+    height: 35px;
+    width: 75%;
+    padding-left: 10px;
+    color: white;
+    border: 1px solid #ffff;
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form .fa-solid {
+    position:relative;
+    top: 28px; left: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.dos .fa-solid{
+    position:relative;
+    top: 43px; left: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.form input[type="password"] {
+    margin-top: 15px;
+}
+
+::placeholder {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .596);
+}
+
+.form input:hover {
+    transition: .5s;
+    border: 1px solid rgb(0, 255, 213);
+    color:#ffe600;
+}
+
+/*-------ya tengo una cuenta------*/
+.link {
+    color: #ffffff71;
+    font-size: 15px;
+    margin-left: 95px;
+}
+
+.link:hover {
+    color:rgb(252, 251, 248);
+}
+/*-----------------------*/
+
+/*-------Iniciar Sesion------*/
+.form button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 40%;
+    background: transparent;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ffffff31;
+    transition: all .5s ease;
+    font-weight: bold;
+}
+
+.form button:hover {
+    color:rgb(255, 251, 2);
+    border: 1.5px solid rgb(0, 240, 200);
+    background: linear-gradient(#acd6ff3f, #63b1ff62);
+    /*box-shadow: 10px -10px 25px 0 rgba(16, 226, 253, .5), -10px 10px 25px 0 rgba(183, 0, 255, 0.7);*/ /*Primer efecto*/
+
+    /*box-shadow: 0 0.5em 0.5em -0.4em; 
+    transform: translateY(-0.30em);*/ /*segundo efecto*/
+    
+    transform: translate(-0.1em);
+    box-shadow: 0 0 5px #5420e2, 0 0 8px #967eff, 0 0 8px #dee4e3; /*tercer efecto*/
+}
+/*-----------------------*/
+
+/*----------animacion Body--------------*/
+@keyframes fanimado {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+/*---------------------------------------*/
+
+/*---------------Registro-----------------*/
+
+/*------El Cuadro---------*/
+.Registro {
+    width: 300px;
+    min-width: 350px;
+    border-radius: 18px;
+    border: solid 1px rgb(148, 251, 255);
+    margin: 200px;
+    padding: 18px;
+    box-shadow: 0 5px 10px rgb(3, 255, 179);
+}
+/*-----------------------*/
+
+.Registro img{
+    width: 120px;
+    display: block;
+    margin: 5px auto;
+}
+
+.text {
+    text-align: center;
+    font-size: 2rem;
+    font: weight 600px;
+    color:beige;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*--------Bordes-------------*/
+.Registro input {
+    display: block;
+    margin: auto;
+    height: 35px;
+    width: 75%;
+    padding-left: 10px;
+    color: white;
+    border: 1px solid rgba(121, 121, 121, 0.562);
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.Registro input:hover {
+    transition: .5s;
+    border: 1px solid rgb(0, 255, 213);
+    color:#ffe600;
+}
+
+/*--------------------------------*/
+.Registro .fa-solid {
+    position:relative;
+    top: 29px; left: 9px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Registro .dos .fa-solid{
+    position:relative;
+    top: 43px; left: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Registro input[type="password"] {
+    margin-top: 15px;
+}
+
+::placeholder {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .596);
+}
+
+/*-------ya tengo una cuenta------*/
+.Registro .link {
+    color: #ffffff71;
+    font-size: 15px;
+    margin-left: 98px;
+}
+
+.Registro .link:hover {
+    color:rgb(252, 251, 248);
+}
+/*-----------------------*/
+
+/*-------Iniciar Sesion------*/
+.Registro button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 40%;
+    background: transparent;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ffffff31;
+    transition: all .5s ease;
+    font-weight: bold;
+}
+
+.Registro button:hover {
+    color:rgb(255, 251, 2);
+    border: 1.5px solid rgb(0, 240, 200);
+    background: linear-gradient(#acd6ff3f, #63b1ff62);
+    /*box-shadow: 10px -10px 25px 0 rgba(16, 226, 253, .5), -10px 10px 25px 0 rgba(183, 0, 255, 0.7);*/ /*Primer efecto*/
+
+    /*box-shadow: 0 0.5em 0.5em -0.4em; 
+    transform: translateY(-0.30em);*/ /*segundo efecto*/
+    
+    transform: translate(-0.1em);
+    box-shadow: 0 0 5px #5420e2, 0 0 8px #967eff, 0 0 8px #dee4e3; /*tercer efecto*/
+}
+/*-----------------------*/
+
+/*----------animacion Body--------------*/
+@keyframes fanimado {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
